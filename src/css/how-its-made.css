@@ -14,11 +14,9 @@
   margin-bottom: 32px;
 }
 .how-made-video {
-  display: flex;
-  justify-content: center;
   position: relative;
-  width: 100%;
-  height: 100%;
+  max-width: 614px;
+  margin: 0 auto;
 }
 .how-made-img {
   border-radius: 15px;
@@ -79,4 +77,15 @@
   color: #111111;
   list-style: disc;
   margin-bottom: 18px;
+}
+/* How its made */
+@media (min-width: 768px) {
+  .how-made-wrap {
+    max-width: 614px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .how-made-text {
+    max-width: 350px;
+  }
 }

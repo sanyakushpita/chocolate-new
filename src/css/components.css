@@ -132,3 +132,18 @@
   padding: 6px 16px;
   border: 1px solid #fd9222;
 }
+/* Media Tablet */
+@media (min-width: 768px) {
+  .components-title {
+    max-width: 383px;
+  }
+  .components-text {
+    max-width: 486px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .components-list {
+    gap: 32px;
+  }
+}

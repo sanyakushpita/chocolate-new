@@ -8,6 +8,12 @@
   margin-right: auto;
   max-width: 375px;
 }
+.advan-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  row-gap: 41px;
+}
 
 .advan-icon-wrap {
   display: flex;
@@ -36,6 +42,17 @@
   letter-spacing: -0.02em;
 
   color: #ffffffb2;
-
+  width: 308px;
   margin-bottom: 29px;
+}
+/* Media Tablet */
+@media (min-width: 768px) {
+  .advantages {
+    max-width: 768px;
+    padding-top: 60px;
+    padding-bottom: 85px;
+  }
+  .advan-text {
+    margin: 0;
+  }
 }

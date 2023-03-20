@@ -3,6 +3,7 @@
   padding-bottom: 71px;
 }
 .hero-title {
+  max-width: 285px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -28,7 +29,6 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
-  overflow: hidden;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -78,10 +78,77 @@
   width: 28px;
   height: 28px;
   padding: 0;
-  stroke: #fd9222;
+  fill: #fd9222;
 }
 .btn-scroll-icon {
+  padding: 9px;
   width: 100%;
   height: 100%;
-  stroke: #fd9222;
+}
+
+/* Media Tablet */
+@media (min-width: 768px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+  .hero-title {
+    font-size: 28px;
+  }
+  .hero-box {
+    max-width: 704px;
+    height: 890px;
+    padding-top: 675px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../img/hero/hero-background-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-box {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(../img/hero/hero-background-tablet-2x.jpg);
+    }
+  }
+  .hero-btn-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-btn {
+    margin: 0;
+  }
+  .hero-title {
+    font-size: 28px;
+    line-height: 1.2;
+    max-width: 480px;
+  }
+
+  ..hero-scroll-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .btn-scroll {
+    width: 38px;
+    height: 38px;
+  }
+  .btn-scroll-icon {
+    padding: 12px;
+  }
+}
+/* Media Tablet */
+@media (min-width: 768px) {
+  .nav-mob-btn {
+    width: 24px;
+    height: 16px;
+  }
 }

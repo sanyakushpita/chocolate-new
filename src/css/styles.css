@@ -52,6 +52,9 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+  button {
+    padding: 14px 40px;
+  }
 }
 
 @media (min-width: 1200px) {

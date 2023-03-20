@@ -65,3 +65,39 @@
   color: #ffffff;
   background: #fd9222;
 }
+/* Media Tablet */
+@media (min-width: 768px) {
+  .subscribe-box {
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subcribe/subcribe-tablet.jpg);
+    max-width: 768px;
+  }
+  @media (min-device-pixel-radio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-box {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subcribe/subcribe-tablet-2x.jpg);
+    }
+  }
+  .subscribe-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .subscribe-text {
+    max-width: 467px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
