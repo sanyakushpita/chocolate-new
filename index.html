@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/chocolate-new/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/chocolate-new/assets/index-59fbd7d4.css">
+    <link rel="stylesheet" href="/chocolate-new/assets/index-78ecbd06.css">
   </head>
   <body>
     <!-- Partials -->
@@ -33,12 +33,12 @@
         <a class="header-logo" href=""
           ><span>SIMPLY</span> CHOCOLATE
           <svg class="icon-logo" width="21" height="21">
-            <use href="/chocolate-new/assets/icons-14279a4c.svg#icon-chocolate"></use>
+            <use href="/chocolate-new/assets/icons-68172815.svg#icon-chocolate"></use>
           </svg>
         </a>
         <button class="nav-mob-btn" type="button">
           <svg class="mob-nav-open" width="21" height="14">
-            <use href="/chocolate-new/assets/icons-14279a4c.svg#mob-menu-open"></use>
+            <use href="/chocolate-new/assets/icons-68172815.svg#mob-menu-open"></use>
           </svg>
         </button>
       </div>
@@ -95,7 +95,7 @@
       <li class="advan-item">
         <div class="advan-icon-wrap">
           <svg class="advantages-icon" width="32" height="32">
-            <use href="/chocolate-new/assets/icons-14279a4c.svg#advan-icon-1"></use>
+            <use href="/chocolate-new/assets/icons-68172815.svg#advan-icon-1"></use>
           </svg>
         </div>
         <h3 class="advan-title">Unsurpassed taste</h3>
@@ -109,7 +109,7 @@
       <li class="advan-item">
         <div class="advan-icon-wrap">
           <svg class="advantages-icon" width="32" height="32">
-            <use href="/chocolate-new/assets/icons-14279a4c.svg#advan-icon-2"></use>
+            <use href="/chocolate-new/assets/icons-68172815.svg#advan-icon-2"></use>
           </svg>
         </div>
 
@@ -125,7 +125,7 @@
       <li class="advan-item">
         <div class="advan-icon-wrap">
           <svg class="advantages-icon" width="32" height="32">
-            <use href="/chocolate-new/assets/icons-14279a4c.svg#advan-icon-3"></use>
+            <use href="/chocolate-new/assets/icons-68172815.svg#advan-icon-3"></use>
           </svg>
         </div>
 
@@ -160,6 +160,7 @@
           <source
             srcset="/chocolate-new/assets/milk-chocolate-desktop-ad3dbf86.png 1x, /chocolate-new/assets/milk-chocolate-desktop-2x-985e6977.png 2x"
             media="(min-width:1200px)"
+            width="206"
           />
           <source
             srcset="/chocolate-new/assets/milk-chocolate-e971409d.png 1x, /chocolate-new/assets/milk-chocolate-2x-64dc741c.png 2x"
@@ -196,6 +197,7 @@
           <source
             srcset="/chocolate-new/assets/milk-desktop-02413aa0.png 1x, /chocolate-new/assets/milk-desktop-2x-ddb5004f.png 2x"
             media="(min-width:1200px)"
+            width="206"
           />
           <source
             srcset="/chocolate-new/assets/milk-3f0cf6e9.png 1x, /chocolate-new/assets/milk-2x-8fe47245.png 2x"
@@ -233,6 +235,7 @@
           <source
             srcset="/chocolate-new/assets/nuts-desktop-cbc03e63.png 1x, /chocolate-new/assets/nuts-desktop-2x-d5069413.png 2x"
             media="(min-width:1200px)"
+            width="206"
           />
           <source
             srcset="/chocolate-new/assets/nuts-78e3a233.png 1x, /chocolate-new/assets/nuts-2x-095f9143.png 2x"
@@ -269,6 +272,7 @@
           <source
             srcset="/chocolate-new/assets/semi-desktop-64bc6002.png 1x, /chocolate-new/assets/semi-desktop-2x-d3e2ba08.png 2x"
             media="(min-width:1200px)"
+            width="206"
           />
           <source
             srcset="/chocolate-new/assets/semi-d816b78f.png 1x, /chocolate-new/assets/semi-2x-85beb87d.png 2x"
@@ -312,6 +316,7 @@
       hOW IT’S<span class="active-color"> made?</span>
     </h2>
     <div class="how-made-video">
+      <!-- Photo Video Wrap -->
       <picture>
         <source
           srcset="/chocolate-new/assets/play-img-desktop-e4d33b63.jpg 1x, /chocolate-new/assets/play-img-desktop-e4d33b63.jpg 2x"
@@ -327,6 +332,7 @@
           srcset="/chocolate-new/assets/play-img-22b1252b.jpg 1x, /chocolate-new/assets/play-img-22b1252b.jpg 2x"
           media="(min-width:375px)"
         />
+
         <img
           class="how-made-img"
           src="/chocolate-new/assets/play-img-22b1252b.jpg"
@@ -334,11 +340,32 @@
           width="335"
         />
       </picture>
-      <button class="video-btn" type="button">
-        <svg class="icon-play-video" width="35" height="35">
-          <use href="/chocolate-new/assets/icons-14279a4c.svg#icon-play"></use>
+      <!-- Video -->
+      <iframe
+        class="myvideo"
+        id="myvideo"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/s0EbAUGftug"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <!-- Button Video -->
+      <button onclick="playVideo()" class="video-btn" type="button">
+        <svg class="icon-play-video" width="14" height="15">
+          <use href="/chocolate-new/assets/icons-68172815.svg#play-i"></use>
         </svg>
       </button>
+      <!-- Video Script -->
+      <script>
+        function playVideo() {
+          var video = document.getElementById('myvideo');
+          video.style.display = 'block';
+          video.src = 'https://www.youtube.com/embed/s0EbAUGftug?autoplay=1';
+        }
+      </script>
     </div>
 
     <div class="how-made-wrap">
