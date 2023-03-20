@@ -5,6 +5,7 @@
       hOW IT’S<span class="active-color"> made?</span>
     </h2>
     <div class="how-made-video">
+      <!-- Photo Video Wrap -->
       <picture>
         <source
           srcset="
@@ -29,6 +30,7 @@
           "
           media="(min-width:375px)"
         />
+
         <img
           class="how-made-img"
           src="./img/how-its-made/play-img.jpg"
@@ -36,11 +38,32 @@
           width="335"
         />
       </picture>
-      <button class="video-btn" type="button">
-        <svg class="icon-play-video" width="35" height="35">
-          <use href="./img/icons.svg#icon-play"></use>
+      <!-- Video -->
+      <iframe
+        class="myvideo"
+        id="myvideo"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/s0EbAUGftug"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <!-- Button Video -->
+      <button onclick="playVideo()" class="video-btn" type="button">
+        <svg class="icon-play-video" width="14" height="15">
+          <use href="./img/icons.svg#play-i"></use>
         </svg>
       </button>
+      <!-- Video Script -->
+      <script>
+        function playVideo() {
+          var video = document.getElementById('myvideo');
+          video.style.display = 'block';
+          video.src = 'https://www.youtube.com/embed/s0EbAUGftug?autoplay=1';
+        }
+      </script>
     </div>
 
     <div class="how-made-wrap">
