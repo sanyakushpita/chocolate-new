@@ -9,10 +9,6 @@ p {
   margin: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -25,11 +21,24 @@ a {
 }
 
 button {
+  font-family: 'Montserrat';
   cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 28px;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #111111;
+  background-color: #fafafa;
+}
+.active-color {
+  color: #fd9222;
 }
