@@ -26,14 +26,14 @@
 
 .components-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .components-item {
   position: relative;
-  max-width: 335px;
-  height: 270px;
+  flex-wrap: wrap;
+  width: 335px;
   border: 1px solid #fd9222;
   border-radius: 15px;
   overflow: hidden;
