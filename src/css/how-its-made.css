@@ -22,7 +22,6 @@
 }
 .how-made-img {
   border-radius: 15px;
-  margin-bottom: 20px;
 }
 
 .video-btn {
@@ -55,6 +54,7 @@
   z-index: 1;
 }
 .how-made-wrap {
+  margin-top: 20px;
   padding: 20px 14px;
   background: #ffffff;
   border-radius: 15px;
