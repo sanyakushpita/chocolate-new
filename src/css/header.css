@@ -1,12 +1,15 @@
 /* Header */
 .nav {
   padding-top: 25px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
 }
 .mob-menu {
   display: flex;
   align-items: center;
   position: relative;
+}
+.desktop-menu {
+  display: none;
 }
 .header-logo {
   display: flex;
@@ -41,7 +44,62 @@
   width: 100%;
   height: 100%;
 }
-/* Other menu */
-.other-menu {
-  display: none;
+/* Tablet menu */
+@media (min-width: 768px) {
+  .nav {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+}
+
+/* Desktop menu */
+@media (min-width: 1200px) {
+  .nav {
+    padding-top: 28px;
+    padding-bottom: 36px;
+  }
+  .mob-menu {
+    display: none;
+  }
+  .desktop-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-logo {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .icon-logo {
+    width: 24px;
+    height: 24px;
+  }
+  .desk-list {
+    display: flex;
+    gap: 24px;
+  }
+  .desk-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #111111;
+  }
+  .desk-nav-link:is(:focus, :hover) {
+    color: #fd9222;
+  }
+  .desk-soc-list {
+    display: flex;
+    gap: 20px;
+  }
+  .nav-soc-icon {
+    fill: #111111;
+  }
+  .nav-soc-link:focus,
+  .nav-soc-link:hover .nav-soc-icon {
+    fill: #fd9222;
+  }
 }

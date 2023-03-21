@@ -1,6 +1,6 @@
 /* How its made */
 .how-made {
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 .how-made-title {
   font-weight: 600;
@@ -78,8 +78,11 @@
   list-style: disc;
   margin-bottom: 18px;
 }
-/* How its made */
+/* Media Tablet */
 @media (min-width: 768px) {
+  .how-made {
+    padding-bottom: 100px;
+  }
   .how-made-wrap {
     max-width: 614px;
     margin-left: auto;
@@ -87,5 +90,18 @@
   }
   .how-made-text {
     max-width: 350px;
+  }
+}
+/* Media Desktop */
+@media (min-width: 1200px) {
+  .how-made {
+    padding-bottom: 128px;
+  }
+  .hov-made-box {
+    display: flex;
+    gap: 20px;
+  }
+  .how-made-wrap {
+    max-width: 516px;
   }
 }

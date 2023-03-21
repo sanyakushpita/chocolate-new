@@ -56,3 +56,28 @@
     margin: 0;
   }
 }
+/* Media Desktop */
+@media (min-width: 1200px) {
+  .advantages {
+    padding-top: 59px;
+    padding-bottom: 59px;
+    max-width: 1200px;
+  }
+  .advan-list {
+    display: flex;
+    justify-content: center;
+    gap: 88px;
+  }
+
+  .advan-item {
+    position: relative;
+  }
+  .advan-icon-wrap::after {
+    position: absolute;
+    content: '';
+    height: 124px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    left: -70px;
+    top: 50px;
+  }
+}

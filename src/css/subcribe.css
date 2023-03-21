@@ -100,4 +100,34 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .subscribe-btn {
+    padding: 14px 40px;
+  }
+}
+/* Media Desktop */
+@media (min-width: 1200px) {
+  .subscribe-box {
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subcribe/subcribe-desktop.jpg);
+    max-width: 1200px;
+  }
+  @media (min-device-pixel-radio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-box {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/subcribe/subcribe-desktop-2x.jpg);
+    }
+  }
 }
