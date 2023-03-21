@@ -64,6 +64,12 @@
   line-height: 17px;
   color: #ffffff;
   background: #fd9222;
+  transition-property: color, background;
+  transition-duration: 0.37s;
+}
+.subscribe-btn:is(:focus, :hover) {
+  color: #fd9222;
+  background-color: #fcf1e0;
 }
 /* Media Tablet */
 @media (min-width: 768px) {

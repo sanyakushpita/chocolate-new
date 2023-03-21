@@ -53,6 +53,9 @@
   transform: translateY(100%);
   overflow: auto;
   padding: 28px;
+
+  transition-property: transform;
+  transition-duration: 0.57s;
 }
 
 .components-img {
@@ -122,6 +125,12 @@
   color: #ffffff;
   background: #fd9222;
   padding: 6px 16px;
+  transition-property: color, background;
+  transition-duration: 0.37s;
+}
+.benefits-btn-one:is(:focus, :hover) {
+  color: #fd9222;
+  background-color: #fcf1e0;
 }
 .benefits-btn-two {
   font-size: 10px;
@@ -131,6 +140,13 @@
   background: #fafafa;
   padding: 6px 16px;
   border: 1px solid #fd9222;
+  transition-property: color, border-color, background;
+  transition-duration: 0.37s;
+}
+.benefits-btn-two:is(:focus, :hover) {
+  color: #fd9222;
+  background-color: #fcf1e0;
+  border-color: transparent;
 }
 /* Media Tablet */
 @media (min-width: 768px) {

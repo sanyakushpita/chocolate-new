@@ -87,8 +87,10 @@
     letter-spacing: -0.02em;
 
     color: #111111;
+    transition-property: color;
+    transition-duration: 0.37s;
   }
-  .desk-nav-link:is(:focus, :hover) {
+  .desk-link:is(:focus, :hover) {
     color: #fd9222;
   }
   .desk-soc-list {
@@ -97,6 +99,8 @@
   }
   .nav-soc-icon {
     fill: #111111;
+    transition-property: all;
+    transition-duration: 0.37s;
   }
   .nav-soc-link:focus,
   .nav-soc-link:hover .nav-soc-icon {
