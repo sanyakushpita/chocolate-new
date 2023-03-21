@@ -1,0 +1,121 @@
+/* Footer */
+.footer-box {
+  background-color: #1e1823;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contact-wrap {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+
+  margin-bottom: 32px;
+}
+.address {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  margin-bottom: 14px;
+}
+.address-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+  margin-bottom: 4px;
+  transition-property: color;
+  transition-duration: 0.37s;
+}
+.address-link:is(:focus, :hover) {
+  color: #fd9222;
+}
+.footer-soc-list {
+  display: flex;
+  gap: 15px;
+}
+.footer-soc-link {
+  fill: #ffffff;
+  transition-property: fill;
+  transition-duration: 0.37s;
+}
+.footer-soc-link:is(:focus, :hover) {
+  fill: #fd9222;
+}
+.footer-nav-wrap {
+  padding-top: 32px;
+}
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+  transition-property: color;
+  transition-duration: 0.37s;
+}
+.footer-nav-link:is(:focus, :hover) {
+  color: #fd9222;
+}
+/* Media Tablet */
+@media (min-width: 768px) {
+  .footer-box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .address {
+    gap: 52px;
+  }
+  .footer-soc-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .footer-nav-wrap {
+    padding-top: 24px;
+  }
+  .footer-nav-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+/* Media Desktop */
+@media (min-width: 1200px) {
+  .address {
+    gap: 65px;
+  }
+}
