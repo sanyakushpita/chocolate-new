@@ -1,0 +1,150 @@
+/* Our products */
+.products {
+  padding-bottom: 72px;
+}
+.products-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  color: #111111;
+  margin-bottom: 32px;
+}
+.products-card {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 18px;
+  row-gap: 18px; */
+}
+.products-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 335px;
+  height: 364px;
+  padding: 32px 53px;
+
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+
+  margin-right: 18px;
+}
+.products-img {
+  margin-bottom: 8px;
+}
+.products-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #111111;
+  margin-bottom: 2px;
+}
+.products-text {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+
+  color: rgba(17, 17, 17, 0.7);
+  margin-bottom: 18px;
+}
+.products-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #111111;
+  padding: 8px 20px;
+}
+.products-btn:is(:focus, :hover) {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+/* Media Tablet */
+@media (min-width: 768px) {
+  .products {
+    padding-bottom: 100px;
+  }
+  .products-title {
+    margin-bottom: 50px;
+  }
+  .products-wrap {
+    max-width: 270px;
+    padding: 32px 20px;
+  }
+}
+/* Media Desktop */
+@media (min-width: 1200px) {
+  .products {
+    padding-bottom: 128px;
+  }
+}
+
+.your-class > div {
+  width: 200px;
+  height: 150px;
+  background-color: #ccc;
+  border: 2px solid white;
+}
+
+.my-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.my-dots ul {
+  display: flex;
+  justify-content: space-around;
+}
+.my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 13px;
+  height: 13px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: rgba(17, 17, 17, 0.1);
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus.active {
+  outline: none;
+  width: 28px;
+  height: 13px;
+  margin-right: 20px;
+  background: #fd9222;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: black;
+}

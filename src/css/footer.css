@@ -1,6 +1,8 @@
 /* Footer */
-.footer-box {
+.footer {
   background-color: #1e1823;
+}
+.footer-box {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -67,6 +69,7 @@
 .footer-nav-list {
   display: flex;
   flex-direction: column;
+  row-gap: 18px;
 }
 .footer-nav-link {
   font-weight: 500;

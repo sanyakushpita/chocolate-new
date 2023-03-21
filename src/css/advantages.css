@@ -6,7 +6,6 @@
   background: #1e1823;
   margin-left: auto;
   margin-right: auto;
-  max-width: 375px;
 }
 .advan-list {
   display: flex;
@@ -48,7 +47,6 @@
 /* Media Tablet */
 @media (min-width: 768px) {
   .advantages {
-    max-width: 768px;
     padding-top: 60px;
     padding-bottom: 85px;
   }
@@ -61,7 +59,6 @@
   .advantages {
     padding-top: 59px;
     padding-bottom: 59px;
-    max-width: 1200px;
   }
   .advan-list {
     display: flex;
@@ -72,12 +69,15 @@
   .advan-item {
     position: relative;
   }
-  .advan-icon-wrap::after {
+  .advan-item::after {
     position: absolute;
     content: '';
     height: 124px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     left: -70px;
     top: 50px;
+  }
+  .advan-item:first-child::after {
+    content: none;
   }
 }

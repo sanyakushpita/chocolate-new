@@ -90,6 +90,7 @@
 
   .top-sellers-wrap {
     display: flex;
+    margin-top: 32px;
   }
 
   .top-sellers .text-mobile {
@@ -98,7 +99,7 @@
 
   .top-sellers .text-tablet {
     display: block;
-    margin-top: 32px;
+
     max-width: 306px;
     font-size: 14px;
     line-height: 1.28;
