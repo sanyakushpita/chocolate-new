@@ -32,7 +32,7 @@
   max-width: 299px;
 }
 .chocolate-wrap {
-  width: 344px;
+  width: 335px;
   height: 200px;
   position: relative;
   background: #ffffff;
@@ -89,6 +89,9 @@
   .chocolate-item:nth-child(3) {
     display: block;
   }
+  .chocolate-wrap {
+    width: 344px;
+  }
 }
 /* Media Desktop */
 @media (min-width: 1200px) {
@@ -97,5 +100,8 @@
   }
   .chocolate-item:nth-child(n) {
     display: block;
+  }
+  .chocolate-wrap {
+    width: 360px;
   }
 }
