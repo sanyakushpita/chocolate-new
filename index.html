@@ -32,12 +32,12 @@
     <!-- Style scc -->
     
     <script type="module" crossorigin src="/chocolate-new/assets/index-4659670b.js"></script>
-    <link rel="stylesheet" href="/chocolate-new/assets/index-f8c663a1.css">
+    <link rel="stylesheet" href="/chocolate-new/assets/index-a69c4fdc.css">
   </head>
   <body>
     <!-- Partials -->
     <!-- Header -->
-<header>
+<header">
   <div class="container">
     <nav class="nav">
       <!-- Mobile menu -->
@@ -66,19 +66,19 @@
         <!-- Menu -->
         <ul class="desk-list">
           <li class="desk-item">
-            <a class="desk-link" href="">Home</a>
+            <a class="desk-link" href="./index.html">Home</a>
           </li>
           <li class="desk-item">
-            <a class="desk-link" href="">How it’s made?</a>
+            <a class="desk-link" href="#how-its-made">How it’s made?</a>
           </li>
           <li class="desk-item">
-            <a class="desk-link" href="">Our products</a>
+            <a class="desk-link" href="#our-products">Our products</a>
           </li>
           <li class="desk-item">
-            <a class="desk-link" href="">Top sellers</a>
+            <a class="desk-link" href="#top-sellers">Top sellers</a>
           </li>
           <li class="desk-item">
-            <a class="desk-link" href="">Chocolate is loved</a>
+            <a class="desk-link" href="#chocolate">Chocolate is loved</a>
           </li>
         </ul>
         <ul class="desk-soc-list">
@@ -118,8 +118,10 @@
           <button class="btn-made" type="button">How it’s made</button>
         </div>
         <div class="hero-scroll">
-          <a class="hero-scroll-link" href="">scroll down</a>
-          <button class="btn-scroll" type="button">
+          <a onclick="scrollToFooter()" class="hero-scroll-link" href=""
+            >scroll down</a
+          >
+          <button onclick="scrollToFooter()" class="btn-scroll" type="button">
             <svg class="btn-scroll-icon" width="10" height="10">
               <use href="/chocolate-new/assets/icons-895591ef.svg#scroll"></use>
             </svg>
@@ -353,7 +355,7 @@
 </section>
 
       <!-- How its made -->
-<section class="how-made">
+<section id="how-its-made" class="how-made">
   <div class="container">
     <h2 class="how-made-title">
       hOW IT’S<span class="active-color"> made?</span>
@@ -436,7 +438,7 @@
 </section>
 
       <!-- Our products -->
-<section class="products">
+<section id="our-products" class="products">
   <div class="container">
     <h2 class="products-title">
       Our <span class="active-color">pRODUCTS</span>
@@ -551,7 +553,7 @@
 </section>
 
       <!-- Top Sellers -->
-<section class="top-sellers">
+<section id="top-sellers" class="top-sellers">
   <div class="container top-sellers-box">
     <h2 class="top-sellers-title"><span>tOp</span> Sellers</h2>
     <ul class="top-sellers-list">
@@ -703,19 +705,19 @@
       <nav class="footer-nav">
         <ul class="footer-nav-list">
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="">Home</a>
+            <a class="footer-nav-link" href="./index.html">Home</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="">How it’s made?</a>
+            <a class="footer-nav-link" href="#how-its-made">How it’s made?</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="">Our products</a>
+            <a class="footer-nav-link" href="#our-products">Our products</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="">Top sellers</a>
+            <a class="footer-nav-link" href="#top-sellers">Top sellers</a>
           </li>
           <li class="footer-nav-item">
-            <a class="footer-nav-link" href="">Chocolate is loved</a>
+            <a class="footer-nav-link" href="#chokolate">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
@@ -739,5 +741,7 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     
+    <!-- Scroll footer -->
+    <script src="/scroll.js"></script>
   </body>
 </html>
