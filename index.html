@@ -118,7 +118,7 @@
           <button class="btn-made" type="button">How it’s made</button>
         </div>
         <div class="hero-scroll">
-          <a onclick="scrollToFooter()" class="hero-scroll-link" href=""
+          <a href="#" onclick="scrollToFooter()" class="hero-scroll-link"
             >scroll down</a
           >
           <button onclick="scrollToFooter()" class="btn-scroll" type="button">
@@ -398,14 +398,6 @@
             <use href="/chocolate-new/assets/icons-895591ef.svg#play-i"></use>
           </svg>
         </button>
-        <!-- Video Script -->
-        <script>
-          function playVideo() {
-            var video = document.getElementById('myvideo');
-            video.style.display = 'block';
-            video.src = 'https://www.youtube.com/embed/s0EbAUGftug?autoplay=1';
-          }
-        </script>
       </div>
 
       <div class="how-made-wrap">
@@ -658,7 +650,7 @@
 
     </main>
     <!-- Footer -->
-<footer class="footer">
+<footer id="footer" class="footer">
   <div class="container footer-box">
     <div class="contact-wrap">
       <h2 class="footer-title">
@@ -743,5 +735,7 @@
     
     <!-- Scroll footer -->
     <script src="/scroll.js"></script>
+    <!-- Video-iframe -->
+    <script src="/video-iframe.js"></script>
   </body>
 </html>
