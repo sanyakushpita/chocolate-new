@@ -32,7 +32,7 @@
     <!-- Style scc -->
     
     <script type="module" crossorigin src="/chocolate-new/assets/index-4659670b.js"></script>
-    <link rel="stylesheet" href="/chocolate-new/assets/index-61edbd4d.css">
+    <link rel="stylesheet" href="/chocolate-new/assets/index-556fb707.css">
   </head>
   <body>
     <!-- Partials -->
@@ -131,6 +131,15 @@
     </div>
   </div>
 </section>
+<!-- Scroll -->
+<script>
+  function scrollToFooter() {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth',
+    });
+  }
+</script>
 
       <!-- Advantages -->
 <section class="advantages">
@@ -428,6 +437,14 @@
     </div>
   </div>
 </section>
+<!-- Video-iframe -->
+<script>
+  function playVideo() {
+    var video = document.getElementById('myvideo');
+    video.style.display = 'block';
+    video.src = 'https://www.youtube.com/embed/s0EbAUGftug?autoplay=1';
+  }
+</script>
 
       <!-- Our products -->
 <section id="our-products" class="products">
@@ -799,9 +816,5 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     
-    <!-- Scroll footer -->
-    <script src="./scroll.js"></script>
-    <!-- Video-iframe -->
-    <script src="./video-iframe.js"></script>
   </body>
 </html>
