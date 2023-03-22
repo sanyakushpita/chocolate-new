@@ -124,7 +124,7 @@
 
   color: #ffffff;
   background: #fd9222;
-  padding: 6px 16px;
+  padding: 6px 15px;
   transition-property: color, background;
   transition-duration: 0.37s;
 }
@@ -138,7 +138,7 @@
 
   color: #111111;
   background: #fafafa;
-  padding: 6px 16px;
+  padding: 6px 15px;
   border: 1px solid #fd9222;
   transition-property: color, border-color, background;
   transition-duration: 0.37s;
